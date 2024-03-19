@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 
-export function useGetProductFromURL() {
+export const useGetProductFromURL = () => {
   const [searchParams] = useSearchParams();
   let products;
 
@@ -13,4 +13,4 @@ export function useGetProductFromURL() {
   return {
     products,
   };
-}
+};
