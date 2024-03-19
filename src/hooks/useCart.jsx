@@ -1,18 +1,5 @@
 import { useReducer } from "react";
 
-export function useCart_() {
-  const [cartItem, setCartItem] = useState([]);
-
-  useEffect(() => {
-    const urlSearchParam = new URLSearchParams(window.location.search);
-    const cartFromURL = urlSearchParam.get("cart");
-    setCartItem(JSON.parse(cartFromURL));
-  });
-
-  return {
-    cartItem,
-  };
-}
 const reducer = (state, action) => {
   const { products } = state;
   switch (action.type) {
