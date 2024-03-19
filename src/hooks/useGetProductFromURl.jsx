@@ -1,8 +1,16 @@
 import { useSearchParams } from "react-router-dom";
+
 export function useGetProductFromURL() {
   const [searchParams] = useSearchParams();
+  let products;
 
-  console.log(JSON.parse(searchParams.get("items")));
+  try {
+    products = JSON.parse(searchParams.get("items"));
+  } catch (e) {
+    products = [];
+  }
 
-  return null;
+  return {
+    products,
+  };
 }

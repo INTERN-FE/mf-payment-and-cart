@@ -4,7 +4,6 @@ import "./index.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Payment from "./components/payment";
-import Checkout from "./components/checkout";
 
 const App = () => (
   <BrowserRouter>
