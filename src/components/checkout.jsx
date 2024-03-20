@@ -10,7 +10,7 @@ const Checkout = () => {
   }, 0);
 
   return (
-    <div className="grid-cols-1 w-full md:w-m h-auto md:h-m box-border border-2 rounded-xl mx-auto md:mx-0 md:flex md:flex-col md:justify-center">
+    <div className="grid-cols-1 w-full md:w-m h-auto md:h-m box-border border-2 rounded-xl mx-auto md:mx-0 md:flex md:flex-col md:justify-center font-poppins">
       <div className="ml-9 mt-4">
         <p className="text-lg font-semibold">Alamat</p>
         <input
