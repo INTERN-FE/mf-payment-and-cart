@@ -3,7 +3,7 @@ import Checkout from "./checkout";
 
 const ItemCard = ({ product }) => {
   return (
-    <div className="flex gap-5 mb-8 border rounded-xl p-4">
+    <div className="flex gap-5 mb-8 border rounded-xl p-4 font-poppins">
       <img
         className="w-36 h-36 flex-none aspect-square object-contain"
         src={product.image}
